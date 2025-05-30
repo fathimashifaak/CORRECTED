@@ -1,0 +1,27 @@
+import java.util.Scanner;
+class Product{
+    int p_code;
+    String p_name;
+    int p_price;
+    Product (){
+        Scanner sc = new Scanner(System.in);
+        p_code = sc.nextInt();
+        p_name = sc.next();
+        p_price = sc.nextInt();
+            };
+            public static void main (String []args){
+            Product p1 = new Product();
+            Product p2 = new Product();
+            Product p3 = new Product();
+            if(p1.p_price<p2.p_price && p1.p_price<p3.p_price){
+                System.out.println(p1.p_name + " has the lowest price : " + p1.p_price);
+            
+            
+            }else if (p2.p_price<p3.p_price){
+                System.out.println(p2.p_name +  "has the lowest price : " + p2.p_price);
+                }else{
+                    System.out.println(p3.p_name + " has the lowest price : " + p3.p_price);
+                    
+                }
+            }
+}
